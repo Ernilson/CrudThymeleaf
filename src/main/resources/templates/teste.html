@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <title>Eu sou Ficha.HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section class="container">
+            <form action="#" method="get"
+                  th:action="@{/testes}" th:oject="*{f}">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="control-label" for="codigo"
+                                       th:text="teste.form.codigo">Código:</label>
+                                <input class="form-control" id="codigo" th:field="*{id}"/>
+                            </div>
+                        </div>  
+
+
+                        </form>
+                        </section>
+                        </body>
+                        </html>
